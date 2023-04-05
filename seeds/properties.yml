@@ -1,0 +1,66 @@
+version: 2
+
+seeds:
+  - name: allergies
+    config:
+      column_types:
+        START: varchar(20)
+        STOP: varchar(20)
+        CODE: varchar(40)
+        DESCRIPTION: varchar(380)
+        DESCRIPTION1: varchar(380)
+        DESCRIPTION2: varchar(380)
+  - name: encounters
+    config:
+      column_types:
+        START: varchar(20)
+        STOP: varchar(20)
+        BASE_ENCOUNTER_COST: varchar(40)
+        TOTAL_CLAIM_COST: varchar(40)
+        PAYER_COVERAGE: varchar(40)
+        CODE: varchar(40)
+        REASONCODE: varchar(40)
+        DESCRIPTION: varchar(380)
+        REASONDESCRIPTION: varchar(380)
+  - name: conditions
+    config:
+      column_types:
+        CODE: varchar(40)
+  - name: immunizations
+    config:
+      column_types:
+        DATE: varchar(20)
+        CODE: varchar(40)
+        BASE_COST: varchar(40)
+        DESCRIPTION: varchar(380)
+  - name: medications
+    config:
+      column_types:
+        START: varchar(20)
+        STOP: varchar(20)
+        CODE: varchar(40)
+        BASE_COST: varchar(20)
+        PAYER_COVERAGE: varchar(20)
+        TOTALCOST: varchar(20)
+        REASONCODE: varchar(40)
+        REASONDESCRIPTION: varchar(380)
+  - name: observations
+    config:
+      column_types:
+        DATE: varchar(20)
+        CODE: varchar(40)
+        VALUE: varchar(80)
+        CATEGORY: varchar(20)
+        DESCRIPTION: varchar(380)
+        UNITS: varchar(20)
+        TYPE: varchar(20)
+  - name: procedures
+    config:
+      column_types:
+        START: varchar(20)
+        STOP: varchar(20)
+        CODE: varchar(40)
+        BASE_COST: varchar(20)
+        REASONCODE: varchar(40)
+        REASONDESCRIPTION: varchar(380)
+
